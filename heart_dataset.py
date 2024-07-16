@@ -11,6 +11,7 @@ print(missing_values)
 # No missing values found
 # Taking the predictions from the dataframe
 heart_disease = heart_train.iloc[:,heart_train.shape[1]-1]
+print(heart_train.head())
 
 for i in range(heart_train.shape[1]-1):
     column = heart_train.iloc[:,i]
