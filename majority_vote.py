@@ -34,7 +34,7 @@ class MajorityVote:
            else:
                if label_zero == None:
                     label_zero= predictions[i]
-           count_zero+=1
+               count_zero+=1
 
         if count_one>count_zero:
             self.majority_label = label_one
@@ -45,6 +45,8 @@ class MajorityVote:
                 self.majority_label = label_one
             else:
                 self.majority_label = label_zero
+        print(f"Count One:{count_one}")
+        print(f"Count Zero:{count_zero}")
 
 
 if __name__ == '__main__':
